@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Title</title>
+  <title>Nasa API</title>
 </head>
 <body>
-Hello World<br>
+  <div class="container">
+  <h1>Welcome to Nasa</h1>
+  <p>Here you can look at images from space</p>
+  <p>
+    Start by selecting a date range:
+  </p>
+  <form id="form">
+    <label for="startDate">Enter a start date</label>
+    <input id="startDate" type="date" name="startDate"><br>
+    <label for="date">Enter an end date</label>
+    <input id="endDate" type="date" name="endDate"><br>
+    <button type="submit" class="btn-picture" id="pictureDate">Show me my picture!!!</button>
+  </form>
+  <div id="showResponse"></div>
+</div>
 <img src="./assets/images/puppy.jpg" alt="such a pup" width="50%" height="50%">
 </body>
 </html>
